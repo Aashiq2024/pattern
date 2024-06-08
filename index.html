@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern</title>
+    <style>
+        div{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <script>
+        let n = 6;
+        let string = "";
+        for (let i = 0; i <= n; i++) {
+            for (let j = 0; j < i; j++) {
+                let char = String.fromCharCode(97 + j);
+                string += char;
+                string += '&nbsp'+'&nbsp' ;
+            }
+            string += "<br>";
+        }
+        
+        document.write(string);
+    </script>
+    </div><br>
+    <script>
+        let n1 = 6;
+        let string1 = "";
+        for (let i = 0; i <= n1; i++) {
+            for (let j = 0; j < i; j++) {
+                let char = String.fromCharCode(97 + j);
+                string1 += char;
+                string1 += '\n'+'\n' ;
+            }
+            string1 += "<br>";
+        }
+        
+        document.write(string1);
+    </script><br>
+    <script>
+        let n2 = 6;
+        let string2 = "";
+        for(let i = 1; i <= n2; i++) {
+            for(let j = 0; j < n2 - i; j++) {
+                string2 += "&nbsp;&nbsp;";
+            }
+            for(let k = 0; k < 2 * i - 1; k++) {
+                string2 += String.fromCharCode(97 + k);
+                string2 += "\n";
+            }
+            string2 += "<br>"; }
+        document.write(string2);
+    </script><br>
+    <script>
+        let n3 = 6;
+        let string3 = "";
+        for (let i = n3; i > 0; i--) {
+          for (let j = 0; j < n3 - i; j++) {
+            string3 += "&nbsp;&nbsp";
+          }
+          for (let k = 0; k < 2 * i - 1; k++) {
+            string3 += String.fromCharCode(97 + k);
+            string3 += "\n"
+          }
+          string3 += "<br>";
+        }
+        document.write(string3);
+     </script><br>
+     <script>
+        let n5 = 5;
+        let string5 = "";
+        for(let i = 1; i <= n5; i++) {
+            for(let j = 0; j < n5 - i; j++) {
+                string5 += "&nbsp;&nbsp;";
+            }
+            for(let k = 0; k < 2 * i - 1; k++) {
+                string5 += String.fromCharCode(49 + k);
+                string5 += "&nbsp";
+            }
+            string5 += "<br>"; }
+        document.write(string5);
+        let n4 = 5;
+        let string4 = "";
+        for (let i = n4; i > 0; i--) {
+          for (let j = 0; j < n4 - i; j++) {
+            string4 += "&nbsp;&nbsp";
+          }
+          for (let k = 0; k < 2 * i - 1; k++) {
+            string4 += String.fromCharCode(49 + k);
+            string4 += "\n"
+          }
+          string4 += "<br>";
+        }
+        document.write(string4);
+     </script>
+     
+</body>
+</html>
